@@ -18,6 +18,7 @@ To set up and run the automated tests locally, follow these steps:
     ```
 
 4. **Run the tests:**
+
 Run test on UI
     ```bash
     npx playwright test --ui
