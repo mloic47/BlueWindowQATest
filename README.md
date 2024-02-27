@@ -42,3 +42,8 @@ The project structure follows the Page Object Model (POM) design pattern for org
 ## Test Reports
 
 After running the tests, detailed test reports will be generated in HTML format. These reports provide insights into the execution status of each test case, including passed and failed scenarios.
+
+## Documentation Guide
+
+- **`Issues`**: Github Issues contains all the test cases generated for the app, these can be identified by their lable **`test case`**. Those with status **`Close`** have already been automated while those with status **`Open`** are still to be automated
+- **`Wiki`**: Contains Additional Documentation Like the Test Scenarios 
