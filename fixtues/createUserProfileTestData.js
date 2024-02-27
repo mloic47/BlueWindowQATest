@@ -1,4 +1,4 @@
 export const createUserProfilePageTestData = {
-    errorMessageText: 'Missing mandatory fields',
+    errorMessageText: 'Please fill all missing mandatory fields',
   };
   
