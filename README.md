@@ -46,4 +46,4 @@ After running the tests, detailed test reports will be generated in HTML format.
 ## Documentation Guide
 
 - **`Issues`**: Github Issues contains all the test cases generated for the app, these can be identified by their lable **`test case`**. Those with status **`Close`** have already been automated while those with status **`Open`** are still to be automated. Bug were also reported in this section but with a red label named **`Bug`**
-- **`Wiki`**: Contains Additional Documentation Like the Test Scenarios 
+- **`Wiki`**: Contains Additional Documentation Like the Test Scenarios and Challenges
