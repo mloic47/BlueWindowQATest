@@ -5,6 +5,11 @@ export const createUserProfilePageTestData = {
     emailErrorMessageText: "Please include an '@' in the email address. 'invalid-email' is missing an '@'.",
 
     // Test Data
-    errorEmailTestData: "invalid-email"
+    errorEmailTestData: "invalid-email",
+    validEmailTestData: "john@gmail.com",
+    validPasswordTestData: "Password123",
+    differentPasswordTestData: "Password13",
+    validFirstNameTestData: "John",
+    validLastNameTestData: "Doe",
   };
   
