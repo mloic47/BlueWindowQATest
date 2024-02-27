@@ -4,18 +4,20 @@ import { config } from '../config';
 export class CreateUserProfilePage {
   constructor(page) {
     this.page = page;
+    // Define the selectors
+    this.submitButton = 'input[type="submit"]';
   }
 
   async navigateTo() {
     await this.page.goto(config.baseUrl);
   }
 
-//   click on the submit button
+  // Click on the submit button
   async clickSubmit() {
-    await this.page.click('button[type="submit"]');
+    await this.page.click(this.submitButton); // Fix: Use this.submitButton
   }
 
-  async getErrorMessage() {
-    return await this.page.textContent('.error-message');
-  }
+//   async getErrorMessage() {
+//     return await this.page.textContent('.error-message');
+//   }
 }
