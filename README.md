@@ -16,6 +16,10 @@ To set up and run the automated tests locally, follow these steps:
     ```bash
     npm install
     ```
+    
+3. **Configure test environment:**
+    - `config.json` specifies the URL of the application under test and any other necessary configurations to be added.
+
 
 4. **Run the tests:**
 
@@ -32,6 +36,8 @@ The project structure follows the Page Object Model (POM) design pattern for org
 - **`pages/`**: Contains page objects representing different pages of the web application.
 - **`config.json`**: Configuration file for specifying test environment settings.
 - **`package.json`**: Node.js package configuration file with dependencies and scripts.
+- **`utils/`**: Contains utility functions used across the test scripts.
+- **`Fixtures/`**: Contains text to be asserted and test data to be used across the test scripts.
 
 ## Test Reports
 
