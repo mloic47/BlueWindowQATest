@@ -20,7 +20,7 @@ test.describe("Create User Profile Page", () => {
     await createUserProfilePage.clickSubmit();
 
     // Verify the error message
-    const errorMessage = await createUserProfilePage.getErrorMessage();
-    expect(page).toContain(createUserProfilePageTestData.errorMessageText);
+    const pageText = await page.textContent('html');
+    expect(pageText).toContain(createUserProfilePageTestData.errorMessageText);
   });
 });
