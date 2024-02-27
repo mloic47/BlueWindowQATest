@@ -56,4 +56,20 @@ test.describe("Create User Profile Page", () => {
     await createUserProfilePage.clickSubmit();
   
   })
+
+  test("Verify Password mismatch can't be submitted", async ({ page }) => {
+    // Fill the email field with a valid email
+    await createUserProfilePage.fillEmail(createUserProfilePageTestData.validEmailTestData);
+    // Fill the first name field with a valid first name
+    await createUserProfilePage.fillFirstName(createUserProfilePageTestData.validFirstNameTestData);
+    // Fill the last name field with a valid last name
+    await createUserProfilePage.fillLastName(createUserProfilePageTestData.validLastNameTestData);
+    // Fill the password field with a valid password
+    await createUserProfilePage.fillPassword(createUserProfilePageTestData.validPasswordTestData);
+    // Fill the confirm password field with a valid password
+    await createUserProfilePage.fillConfirmPassword(createUserProfilePageTestData.validPasswordTestData + "1");
+    // Click on the submit button
+    await createUserProfilePage.clickSubmit();
+    await reusableFunctions.handleDialog(page, createUserProfilePageTestData.passwordMismatchErrorMessageText);
+  })
 });
