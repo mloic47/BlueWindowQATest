@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { CreateUserProfilePage } from "../pages/CreateUserProfilePage";
 import { createUserProfilePageTestData } from "../fixtues/createUserProfileTestData";
 
+
 let createUserProfilePage;
 
 test.describe("Create User Profile Page", () => {
