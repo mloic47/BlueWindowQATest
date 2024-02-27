@@ -31,10 +31,15 @@ test.describe("Create User Profile Page", () => {
     page,
   }) => {
     // Fill the email field with an invalid email
-    await createUserProfilePage.fillEmail("invalid-email");
+    await createUserProfilePage.fillEmail(createUserProfilePageTestData.errorEmailTestData);
 
     // Click on the submit button
     await createUserProfilePage.clickSubmit();
+
+    await page.once("dialog", (dialog) => {
+      expect(dialog.message()).toContain(createUserProfilePageTestData.emailErrorMessageText);
+      dialog.dismiss().catch(() => {});
+    });  
 
     // Verify the error message
     // const pageText = await page.textContent('html');
